@@ -1,10 +1,13 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
     font-size: 36px;
-    padding: 100px 0;
+    padding: 100px 16px;
     text-align: center;
 }
 
@@ -20,6 +23,7 @@ h3 {
 
 h4 {
     font-size: 24px;
+    padding: 12px;
 }
 
 h5 {
@@ -33,6 +37,14 @@ h6 {
 p {
     font-size: 16px;
     padding: 12px;
+}
+
+a {
+    color: #000000;
+}
+span {
+    color: #f00;
+    font-weight: 700;
 }
 
 figcaption {
@@ -85,6 +97,36 @@ img {
     width: 100%;
 }
 
+table {
+    width: 100%;
+    border: 1px solid #00274C;
+    text-align: left;
+    overflow-x: auto;
+}
+
+th {
+    background-color: #00274C;
+    color: #ffffff;
+    padding: 12px 6px;
+}
+
+td {
+    padding: 12px;
+}
+
+button {
+    background-color: #00274C;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
 footer {
     background-color: #00274C;
     color: #FFCB05;
@@ -95,8 +137,54 @@ footer a {
     color: white;
 }
 
+.skip {
+    position: absolute;
+    top: -40px;
+}
+
+.skip:focus {
+    position: absolute;
+    top: 20px;
+    border: #00274C;
+    background-color: #ffffff;
+}
+
 .study_card{
+    margin: 16px 0;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 10px;
+    gap: 16px;
 }
+
+.resources {
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+}
+
+.resources img {
+    grid-column: 1 / 2;
+    width: 75%;
+}
+
+.resources h3 {
+    grid-column: 2 / -1;
+    text-align: left;
+}
+
+.resources div {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.information {
+    margin: 16px;
+    padding: 20px;
+}
+
+article {
+    margin: 16px;
+    padding: 20px; 
+}
+
