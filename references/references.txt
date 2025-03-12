@@ -1,0 +1,22 @@
+References 
+
+
+
+
+
+When prompted with “why is my skip to main not working” the ChatGPT listed common issues related to Skip to main. I did not include my code in this question, since I did not want ChatGPT to be writing any code for me. I only asked this question because I could not find the answer from any of the validators. 
+
+The part of the response I used was :
+
+“Missing or Incorrect Target ID
+* Ensure your skip link (<a href="#main-content">Skip to Main Content</a>) matches the id of your main content container.
+* Example: htmlCopyEdit<a href="#main-content" class="skip-link">Skip to Main Content</a>
+* <main id="main-content">
+*     <h1>Welcome to My Site</h1>
+* </main>
+“
+ This information was helpful for realizing that I had just used #main in my href, but had not included the id in my main.
+
+OpenAI. (2025). GPT-4 [Large multimodal model].
+ https://chat.openai.com/chat
+ 
