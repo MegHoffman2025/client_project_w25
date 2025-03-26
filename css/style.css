@@ -71,6 +71,11 @@ nav a {
     padding: 20px;
 }
 
+nav a.current {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
 nav a:hover {
     background-color: #FFCB05;
     color: #00274C;
