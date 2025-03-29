@@ -3,10 +3,19 @@
 }
 
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
+} 
+
+a {
+    font-size: 16px;
 }
 
-h1 {
+/* section {
+    padding: 16px;
+} */
+
+/* Defining Font Sizes */
+/* h1 {
     font-size: 36px;
     padding: 100px 16px;
     text-align: center;
@@ -14,6 +23,10 @@ h1 {
 
 h2 {
     font-size: 32px;
+    padding: 50px 16px;
+    text-align: center;
+    background-color: #00274C;
+    color: #ffffff;
 }
 
 h3 {
@@ -51,27 +64,54 @@ span {
 figcaption {
     text-align: center;
     padding: 6px;
+} */
+
+/* Designing the header of the page */
+/* header > div {
+    background-color:#00274C;
+    align-items: center;
 }
 
-header img{
+header div img{
     width: 10%;
-    display: inline;
+    display: block;
 }
 
 nav {
     background-color: #00274C;
-}
-
-nav a {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 20px;
+    flex-direction: column;
 }
 
-nav a.current {
+nav li {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+}
+
+nav li a{
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav li:hover{
+    background-color: #FFCB05;
+}
+
+nav li:hover a{
+    color: #000000;
+    text-decoration: none;
+}
+
+nav li.current {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+nav li.current a {
     background-color: #FFCB05;
     color: #00274C;
 }
@@ -81,18 +121,11 @@ nav a:hover {
     color: #00274C;
 }
 
-section {
-    padding: 16px 0;
+section div.content{
+    margin: 16px;
 }
 
-section h2 {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #00274C;
-    color: #ffffff;
-}
-
-section article {
+article {
     display: grid;
     grid-template-columns: auto;
 }
@@ -143,6 +176,11 @@ footer a {
     color: white;
 }
 
+*/
+a {
+    font-size: 16px;
+}
+
 .skip {
     position: absolute;
     top: -40px;
@@ -155,6 +193,67 @@ footer a {
     top: 20px;
 }
 
+nav {
+    width: 100%;
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+div.profile_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+nav a {
+    display: inline-block;
+    padding: 12px 0px;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a.current_page {
+    text-decoration: underline;
+}
+
+nav a.log_out{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 100px;
+    background-color: #00274C;
+    color: #ffffff;
+}
+
+nav a.log_out:hover{
+    background-color: #FFCB05;
+    color: #000000;
+    text-decoration: none;
+} 
+
+header div.title_and_info {
+    padding: 80px;
+    text-align: center;
+}
+
+header div.title_and_info h1{
+    font-size: 32px;
+    padding: 12px;
+}
+
+
+ /*
 .study_card{
     margin: 16px 0;
     display: grid;
@@ -162,35 +261,94 @@ footer a {
     gap: 16px;
 }
 
-.resources {
+.article {
     padding: 16px 0;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     align-items: center;
 }
 
-.resources img {
+.article img {
     grid-column: 1 / 2;
     width: 75%;
-}
-
-.resources h3 {
-    grid-column: 2 / -1;
-    text-align: left;
-}
-
-.resources div {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
 }
 
 .information {
     margin: 16px;
     padding: 20px;
 }
+*/
 
-article {
-    margin: 16px;
-    padding: 20px; 
-}
+@media screen and (min-width: 1000px){
 
+    nav {
+        flex-direction: row;
+        padding: 0px 32px;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 12px 24px;
+    }
+
+    div.links {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    div.links a:first-child{
+        padding-left: 0px;
+    }
+
+    div.profile_buttons{
+        flex-direction: row;
+
+    }
+    /* header div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    header div img{
+        margin: 0px;
+        display: inline;
+        height: 36px;
+        width:fit-content;
+    }
+
+    nav {
+        flex-direction: row;
+    } 
+    nav li {
+        display: inline-block;
+        width:fit-content;
+    }
+
+    article {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        justify-content: center;
+    }
+
+    article h3 {
+        grid-column: 1 / 6;
+    }
+
+    article img {
+        grid-column: 1 / 2;
+    }
+
+    article p {
+        grid-column: 2 / 6;
+        justify-content: center;
+    }
+
+    .study_card{
+        grid-template-columns: 25% 25% 25% 25%;
+    } */
+} 
