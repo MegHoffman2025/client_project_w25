@@ -10,16 +10,17 @@ a {
     font-size: 16px;
 }
 
+figcaption {
+    text-align: center;
+    padding: 6px;
+}
+
 /* section {
     padding: 16px;
 } */
 
 /* Defining Font Sizes */
-/* h1 {
-    font-size: 36px;
-    padding: 100px 16px;
-    text-align: center;
-}
+/* 
 
 h2 {
     font-size: 32px;
@@ -59,66 +60,6 @@ a {
 span {
     color: #751710;
     font-weight: 700;
-}
-
-figcaption {
-    text-align: center;
-    padding: 6px;
-} */
-
-/* Designing the header of the page */
-/* header > div {
-    background-color:#00274C;
-    align-items: center;
-}
-
-header div img{
-    width: 10%;
-    display: block;
-}
-
-nav {
-    background-color: #00274C;
-    display: flex;
-    flex-direction: column;
-}
-
-nav li {
-    padding-left: 16px;
-    padding-right: 16px;
-    display: inline-block;
-    padding: 20px;
-    width: 100%;
-}
-
-nav li a{
-    width: 100%;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav li:hover{
-    background-color: #FFCB05;
-}
-
-nav li:hover a{
-    color: #000000;
-    text-decoration: none;
-}
-
-nav li.current {
-    background-color: #FFCB05;
-    color: #00274C;
-}
-
-nav li.current a {
-    background-color: #FFCB05;
-    color: #00274C;
-}
-
-nav a:hover {
-    background-color: #FFCB05;
-    color: #00274C;
 }
 
 section div.content{
@@ -252,6 +193,39 @@ header div.title_and_info h1{
     padding: 12px;
 }
 
+section {
+    margin: 0px 16px;
+}
+h2 {
+    font-size: 24px;
+}
+
+#social_study{
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+div.study_card {
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 16px;
+}
+
+div.study_card img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+div.study_information {
+    margin: 10px;
+}
+
+div.study_card h3{
+    font-size: 20px;
+}
 
  /*
 .study_card{
@@ -306,7 +280,14 @@ header div.title_and_info h1{
 
     div.profile_buttons{
         flex-direction: row;
+    }
 
+    header div.title_and_info h1{
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
     }
     /* header div {
         display: flex;
