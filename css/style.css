@@ -77,23 +77,6 @@ img {
     width: 100%;
 }
 
-table {
-    width: 100%;
-    border: 1px solid #00274C;
-    text-align: left;
-    overflow-x: auto;
-}
-
-th {
-    background-color: #00274C;
-    color: #ffffff;
-    padding: 12px 6px;
-}
-
-td {
-    padding: 12px;
-}
-
 button {
     background-color: #00274C;
     color: #ffffff;
@@ -236,14 +219,75 @@ div.study_card h3{
     font-size: 20px;
 }
 
- /*
-.study_card{
-    margin: 16px 0;
+div.courses_info {
     display: grid;
-    grid-template-columns: 50% 50%;
+    justify-content: center;
+    grid-template-columns: 1fr;
     gap: 16px;
 }
 
+table {
+    text-align: left;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    width: 100%;
+}
+
+th {
+    background-color: #00274C;
+    color: #ffffff;
+    padding: 12px 6px;
+    text-align: center;
+}
+
+th.course_code {
+    background-color: #702082;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 10px 100px #702082;
+}
+
+th.course_name {
+    background-color: #2F65A7;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 10px 100px #2F65A7;
+}
+
+th.credits {
+    background-color: #00B2A9;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 10px 100px #00B2A9;
+}
+
+td {
+    padding: 6px 12px;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+} 
+
+tr {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+div.courses_info div h3 {
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+.course_requirements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 24px 0px;
+}
+
+/*
 .article {
     padding: 16px 0;
     display: grid;
@@ -305,6 +349,25 @@ div.study_card h3{
 
     #quiet_study{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    div.courses_info {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        justify-items: center;
+    }
+
+    div.courses_info div h3 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .course_requirements{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 48px 0px;
+    }
+    .course_requirements p{
+        font-size: 20px;
     }
     /* header div {
         display: flex;
