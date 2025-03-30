@@ -176,11 +176,12 @@ header div.title_and_info h1{
 }
 
 section {
-    margin: 0px 16px;
+    margin: 16px 16px;
 }
 
 h2 {
     font-size: 24px;
+    padding-bottom: 16px;
 }
 
 /* Code for creating style for the study locations page */
@@ -287,6 +288,18 @@ div.courses_info div h3 {
     padding: 24px 0px;
 }
 
+button {
+    background-color: #00274C;
+    color: white;
+    border-radius: 100px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #FFCB05;
+    color: #000000;
+}
 /*
 .article {
     padding: 16px 0;
@@ -307,6 +320,10 @@ div.courses_info div h3 {
 */
 
 @media screen and (min-width: 1000px){
+
+    section {
+        margin: 32px 32px;
+    }
 
     nav {
         flex-direction: row;
@@ -341,6 +358,7 @@ div.courses_info div h3 {
 
     h2 {
         font-size: 32px;
+        padding-bottom: 32px;
     }
 
     #social_study{
@@ -361,6 +379,7 @@ div.courses_info div h3 {
         font-size: 24px;
         padding-bottom: 10px;
     }
+
     .course_requirements{
         flex-direction: column;
         justify-content: space-around;
