@@ -269,19 +269,19 @@ th:nth-of-type(2) {
 }
 
 th:nth-of-type(3) {
-    background-color: #00B2A9;
+    background-color: #575294;
     border-left: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
     border-radius: 10px 10px 0px 0px;
-    box-shadow: 0px 10px 100px #00B2A9;
+    box-shadow: 0px 10px 100px #575294;
 }
 
 th:nth-of-type(4) {
-    background-color: #75988d;
+    background-color: #9A3324;
     border-left: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
     border-radius: 10px 10px 0px 0px;
-    box-shadow: 0px 10px 100px #75988d;
+    box-shadow: 0px 10px 100px #9A3324;
 }
 
 td {
