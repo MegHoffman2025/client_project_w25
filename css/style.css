@@ -185,6 +185,10 @@ h2 {
     padding-bottom: 16px;
 }
 
+h3 {
+    font-size: 20px;
+}
+
 /* Code for creating style for the study locations page */
 #social_study{
     margin: 16px;
@@ -208,7 +212,7 @@ div.study_card {
 
 div.study_card img {
     width: 100%;
-    height: 50%;
+    height: 150px;
     object-fit: cover;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -248,7 +252,7 @@ th {
     text-align: center;
 }
 
-th.course_code {
+th:first-of-type {
     background-color: #702082;
     border-left: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
@@ -256,7 +260,7 @@ th.course_code {
     box-shadow: 0px 10px 100px #702082;
 }
 
-th.course_name {
+th:nth-of-type(2) {
     background-color: #2F65A7;
     border-left: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
@@ -264,12 +268,20 @@ th.course_name {
     box-shadow: 0px 10px 100px #2F65A7;
 }
 
-th.credits {
+th:nth-of-type(3) {
     background-color: #00B2A9;
     border-left: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 10px 100px #00B2A9;
+}
+
+th:nth-of-type(4) {
+    background-color: #75988d;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 10px 100px #75988d;
 }
 
 td {
@@ -350,30 +362,41 @@ ul li {
 }
 
 ol {
-    padding: 10px;
+    padding: 15px;
 }
 
 ol li {
     margin: 5px;
 }
-/*
-.article {
-    padding: 16px 0;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+
+div.resource_title {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.article img {
-    grid-column: 1 / 2;
-    width: 75%;
+div.resource_title img {
+    height: 50px;
 }
 
-.information {
-    margin: 16px;
-    padding: 20px;
+div.resource_title h3 {
+    padding: 10px;
 }
-*/
+
+article {
+    padding: 16px 0px;
+}
+
+div.career_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+.subcategory {
+    padding: 16px;
+}
 
 @media screen and (min-width: 1000px){
 
@@ -415,6 +438,11 @@ ol li {
     h2 {
         font-size: 32px;
         padding-bottom: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding-bottom: 16px;
     }
 
     #social_study{
@@ -464,47 +492,19 @@ ol li {
     p.section_description{
         padding: 16px 0px;
     }
-    /* header div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    header div img{
-        margin: 0px;
-        display: inline;
-        height: 36px;
-        width:fit-content;
+
+    div.career_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    nav {
-        flex-direction: row;
-    } 
-    nav li {
-        display: inline-block;
-        width:fit-content;
+    div.events {
+        grid-column: 2 /4;
     }
 
-    article {
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        justify-content: center;
+    div.career_info h4 {
+        font-size: 20px;
+        padding-bottom: 12px;
     }
-
-    article h3 {
-        grid-column: 1 / 6;
-    }
-
-    article img {
-        grid-column: 1 / 2;
-    }
-
-    article p {
-        grid-column: 2 / 6;
-        justify-content: center;
-    }
-
-    .study_card{
-        grid-template-columns: 25% 25% 25% 25%;
-    } */
+    
 } 
